@@ -8,10 +8,12 @@ namespace ConsoleAppLog4Net
 {
   class Program
   {
-    static void Main(string[] args)
+    private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+    private static void Main(string[] args)
     {
-      // add code here
-
+      log.Info("This is my first logger example");
+      Console.WriteLine("log");
+      Console.ReadKey();
     }
   }
 }
