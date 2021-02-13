@@ -8,8 +8,10 @@ namespace ConsoleAppLog4Net
     private static void Main(string[] args)
     {
       log.Info("This is my first logger example");
+      log.Info("log info");
+      log.Fatal("log fatal");
       Console.WriteLine("log");
-      Console.ReadKey();
+      //Console.ReadKey();
     }
   }
 }
